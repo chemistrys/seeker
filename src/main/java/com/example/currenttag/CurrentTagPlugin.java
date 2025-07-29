@@ -64,7 +64,7 @@ public class CurrentTagPlugin extends JavaPlugin implements CommandExecutor {
                         //PlayerPointsAPI.look(target.getUniqueId());
         String nickname = DataUtil.getNickname(target.getUniqueId());
 
-        sender.sendMessage("§a" + target.getName() + " §e当前的points: §b" + nickname);
+        sender.sendMessage("§a" + target.getName() + " §e当前的nick: §b" + (nickname == null ? "no nick" : nickname));
         /*
         if (tag == null || tag.isEmpty()) {
             sender.sendMessage("§e玩家 §a" + target.getName() + " §e没有佩戴任何称号。");
