@@ -16,11 +16,11 @@
     <dependencies>
         
 	<dependency>
-		<groupId>org.black_ixx</groupId>
-		<artifactId>playerpoints</artifactId>
-		<version>3.2.7</version>
+		<groupId>co.ignitus</groupId>
+		<artifactId>mysqlnicks</artifactId>
+		<version>1.0.7</version>
 		<scope>system</scope>
-		<systemPath>${project.basedir}/libs/PlayerPoints-3.2.7.jar</systemPath>
+		<systemPath>${project.basedir}/libs/MySQLNicks-1.0.7fix for 1.8.jar</systemPath>
 	</dependency>
 
 	<!-- Spigot API -->

@@ -9,7 +9,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 //import me.clip.placeholderapi.PlaceholderAPI;
 //import me.clip.deluxetags.tags.DeluxeTag;
-import org.black_ixx.playerpoints.PlayerPointsAPI;
+//import org.black_ixx.playerpoints.PlayerPointsAPI;
+import co.ignitus.mysqlnicks.util.DataUtil;
 import org.black_ixx.playerpoints.manager.DataManager;
 import org.black_ixx.playerpoints.PlayerPoints;
 
@@ -59,10 +60,11 @@ public class CurrentTagPlugin extends JavaPlugin implements CommandExecutor {
         // 使用 PlaceholderAPI 获取玩家当前称号
         //String tag = DeluxeTag.getPlayerTagIdentifier(target.getUniqueId().toString());
 
-        int points = ((DataManager) PlayerPoints.getInstance().getManager(DataManager.class)).getEffectivePoints(target.getUniqueId());
+        //int points = ((DataManager) PlayerPoints.getInstance().getManager(DataManager.class)).getEffectivePoints(target.getUniqueId());
                         //PlayerPointsAPI.look(target.getUniqueId());
+        String nickname = DataUtil.getNickname(target.getUniqueId());
 
-        sender.sendMessage("§a" + target.getName() + " §e当前的points: §b" + points);
+        sender.sendMessage("§a" + target.getName() + " §e当前的points: §b" + nickname);
         /*
         if (tag == null || tag.isEmpty()) {
             sender.sendMessage("§e玩家 §a" + target.getName() + " §e没有佩戴任何称号。");
