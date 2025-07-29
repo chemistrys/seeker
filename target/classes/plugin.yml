@@ -1,0 +1,14 @@
+name: CurrentTagPlugin
+version: 1.0
+main: com.example.currenttag.CurrentTagPlugin
+api-version: 1.13
+commands:
+  currenttag:
+    description: 查看玩家当前的 DeluxeTags 称号
+    usage: /currenttag <玩家名>
+    permission: currenttag.use
+permissions:
+  currenttag.use:
+    description: 使用 /currenttag 的权限
+    default: true
+
