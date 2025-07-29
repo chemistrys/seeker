@@ -11,8 +11,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 //import me.clip.deluxetags.tags.DeluxeTag;
 //import org.black_ixx.playerpoints.PlayerPointsAPI;
 import co.ignitus.mysqlnicks.util.DataUtil;
-import org.black_ixx.playerpoints.manager.DataManager;
-import org.black_ixx.playerpoints.PlayerPoints;
+//import org.black_ixx.playerpoints.manager.DataManager;
+//import org.black_ixx.playerpoints.PlayerPoints;
 
 import java.io.*;
 import java.util.HashMap;
